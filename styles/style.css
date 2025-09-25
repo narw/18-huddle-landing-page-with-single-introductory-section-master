@@ -89,6 +89,8 @@ button {
     body {
         background-image: url("../images/bg-desktop.svg");
         background-position: -87px -12px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     main {
