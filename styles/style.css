@@ -66,6 +66,12 @@ button {
     color: var(--purple-700);
     background: white;
     box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+
+    &:hover, &:focus {
+        color: white;
+        background: var(--magenta-400);
+    }
 }
 
 .socials {
@@ -77,12 +83,18 @@ button {
 }
 
 .circle {
-    outline: 2px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     aspect-ratio: 1;
     width: 50px;
     display: grid;
     place-content: center;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        border-color: var(--magenta-400);
+        color: var(--magenta-400);
+    }
 }
 
 @media (width >= 800px) {
@@ -143,16 +155,16 @@ button {
         }
 
         .socials {
-            margin-block-start: 185px;
-            margin-inline-end: 82px;
+            margin-block-start: 183px;
+            margin-inline-end: 79px;
             font-size: 16px;
             justify-content: flex-end;
-            gap: 19px;
+            gap: 17px;
         }
 
         .circle {
-            width: 37px;
-            outline-width: 1px;
+            width: 40px;
+            border-width: 1px;
         }
     }
 }
